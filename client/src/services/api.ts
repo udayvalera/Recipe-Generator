@@ -5,7 +5,7 @@ import axios from 'axios';
 // Assuming your frontend dev server proxies '/api' requests to your backend (e.g., http://localhost:5001)
 // If not, replace baseURL with your full backend API URL, possibly from environment variables
 // Example: const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
-const API_BASE_URL = import.meta.env.BACKEND_URL || "http://localhost:5001/api/"; // Use '/api' if proxy is set up
+const API_BASE_URL = "https://recipe-generator-steel.vercel.app/api"; // Use '/api' if proxy is set up
 
 const api = axios.create({
   baseURL: API_BASE_URL,
